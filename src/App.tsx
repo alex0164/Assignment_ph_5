@@ -10,7 +10,7 @@ import Footer from "./component/Footer";
 // import YourStacks from "./component/stacks/YourStacks";
 
 const stacksFetch = async (): Promise<Istack[]> => {
-  const res = await fetch('/public/data.json');
+  const res = await fetch('/data.json');
   const data = await res.json();
   return data;
 };
